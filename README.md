@@ -102,6 +102,8 @@ for (const subject of subjects) {
     }
 }
 
+```bash
+
 ### Conclusion
 The introduction and successful implementation of Bayesian Networks in our educational platform, DigiLearns, represents a substantial advancement in the field of personalized education. The Bayesian model we have developed adapts dynamically to the unique needs of each student, providing tailored educational content. This level of personalization is not only a technological achievement but also a significant step forward in addressing educational inequality.
 
