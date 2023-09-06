@@ -1,5 +1,3 @@
-# DigiLearns-Bayesian-Model
-
 # Personalizing Educational Content with Bayesian Models at DigiLearns
 
 At DigiLearns, we are dedicated to democratizing access to quality education for disadvantaged students. We don't stop at delivering content; we aim to deliver personalized content that suits the learning needs and styles of individual students. To accomplish this, we utilize Bayesian models to adaptively tailor the educational materials.
@@ -24,3 +22,22 @@ The model can also analyze past performance data to predict future achievements,
 
 ```bash
 npm install bayesian-network
+
+## How The Algorithm Works
+
+```javascript
+const BayesianNetwork = require('bayesian-network');
+
+const studentModel = new BayesianNetwork('StudentModel');
+
+// Nodes and Initial Probabilities (Priors)
+studentModel.addNode('PriorKnowledge', ['Low', 'Medium', 'High']);
+studentModel.addNode('LearningStyle', ['Visual', 'Auditory', 'Kinesthetic']);
+studentModel.addNode('Performance', ['Poor', 'Average', 'Good']);
+
+// Conditional Probabilities
+studentModel.addConditionalProbability({
+  // ...
+  // (rest of the code here)
+});
+
